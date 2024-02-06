@@ -1,1 +1,1 @@
-# calculadoraSimples
+#  Calculadora que combina uma estrutura sólida em HTML, estilização elegante com CSS e uma lógica de operações em JavaScript. Com um layout amigável, a calculadora permite aos usuários realizar cálculos básicos, como adição, subtração, multiplicação e divisão, de forma intuitiva.
