@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(183, 197, 197);
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(219, 9, 9);
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to bottom, #1c0149 16.62%, #5169d6 85.61%);
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: .5em;
+    gap: 5px;
+}
+
+.visor {
+    display: grid;
+    padding: .2em;
+    margin-bottom: 5px;
+    border: 8px solid;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    justify-content: end;
+    text-align: center;
+    color: grey;
+    border-color: rgb(145, 148, 145);
+    background-color: rgb(217, 217, 219);
+    word-break: break-all;
+    min-height: 4.5em;
+}
+
+.conteudo-do-visor {
+    font-size: 30px;
+}
+
+
+
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: .2em;
+    gap: 5px;
+}
+
+.teclas button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+  
+
+}
+
+.teclaSoma {
+    background-color: rgb(221, 129, 9);
+    width: 1.4em;
+    font-size: 2.54em;
+    grid-row: span 2;
+    grid-column: 4;
+}
+
+.teclasOperacao {
+    text-align: center;
+    padding: .2em;
+    font-size: 1.2em;
+    color: rgb(17, 17, 39);
+    background-color: rgb(221, 129, 9);
+    width: 3em;
+}
+
+.numero {
+    text-align: center;
+    padding: .2em;
+    height: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(17, 17, 39);
+    gap: 5px;
+
+}
+
+.empty {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.clear {
+    background-color: red;
+    height: 2em;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.numero:hover {
+    background-color: rgb(119, 122, 124);
+    cursor: pointer;
+}
+
+.teclaSoma:hover,
+.teclasOperacao:hover {
+    background-color: rgb(107, 62, 4);
+    cursor: pointer;
+}
+
+.clear:hover{
+    background-color: rgb(77, 6, 6);
+    cursor: pointer;
+}
+
+.numero:active,
+.teclaSoma:active,
+.teclasOperacao:active,
+.clear:active {
+    transform: scale(0.9);
+}

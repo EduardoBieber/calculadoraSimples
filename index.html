@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcDev - Sua calculadora online</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+    <header class="cabecalho">
+        Calculadora Online
+    </header>
+
+    <section class="calculadora">
+        <div class="visor">
+            <span class="conteudo-do-visor">0</span>
+        </div>
+
+        <div class="teclas">
+            <button class="empty">empty</button>
+            <button class="clear" data-action="clearAll">AC</button>
+            <button class="clear" data-action="clear">C</button>
+            <button class="teclasOperacao" data-action="divide">÷</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="teclasOperacao" data-action="subtract">-</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="teclasOperacao" data-action="multiply">x</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="teclaSoma" data-action="add">+</button>
+            <button class="numero">0</button>
+            <button class="numero" data-action="decimal">.</button>
+          
+                      
+            <button class="numero" data-action="calculate">=</button>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
